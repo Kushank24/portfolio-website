@@ -205,9 +205,15 @@ with col2:
     st.markdown(
         """
         <div class="contact-info">
-            <a href="mailto:mkushank2000@gmail.com">📧 Email</a>
-            <a href="tel:+919214560741">📱 Phone</a>
-            <a href="https://www.linkedin.com/in/kushank-maheshwari" target="_blank">💼 LinkedIn</a>
+            <a href="mailto:mkushank2000@gmail.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" alt="Email" style="width:50px; height:50px; vertical-align:middle;">
+            </a>
+            <a href="https://github.com/Kushank24" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width:50px; height:50px; vertical-align:middle;">
+            </a>
+            <a href="https://www.linkedin.com/in/kushank-maheshwari" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" style="width:50px; height:50px; vertical-align:middle;">
+            </a>
         </div>
         """,
         unsafe_allow_html=True
@@ -219,32 +225,15 @@ def create_section(title, content):
     st.markdown(content, unsafe_allow_html=True)
     st.markdown('</div></div>', unsafe_allow_html=True)
 
-# Education Section
 create_section(
-    "Education",
+    "About",
     """
     <div class="project-item">
-        <h3>Birla Institute of Technology and Science, Pilani</h3>
-        <p>Master of Science in Mathematics + Bachelor of Engineering in Computer Science Engineering</p>
-        <p><strong>GPA:</strong> 8.73/10.00 | <strong>Graduation:</strong> June 2023</p>
-        <br>
-        <h3>Delhi Public School, Jodhpur</h3>
-        <p><strong>Class XII:</strong> 95.4% | May 2018</p>
-    </div>
-    """
-)
-
-# Skills Section
-create_section(
-    "Skills",
-    """
-    <div class="project-item">
-        <h3>Programming</h3>
-        <p>C++, Python (NumPy, Pandas, Matplotlib, Scrapy, scikit-learn, Django), JavaScript, SQL, Slang</p>      
-        <h3>Tools & Technologies</h3>
-        <p>Airflow, Cylc, StackStorm, GIT, MS Excel, IBM-SPSS, MySQL</p>
-        <h3>Relevant Coursework</h3>
-        <p>Data Structures and Algorithms, Database Systems, Artificial Intelligence, Data Mining</p>
+        <p>Hello!</p>
+        <p>I'm Kushank, learning about the best reliability practices in the Site Reliability Engineering (SRE) Team.</p>
+        <p>I'm an ardent person who's always on his toes to learn new things with good interpersonal skills. It took me more than 6 months of internship work to learn the secret about how actual work goes in an industry, but since then, it has helped me improve my communication skills, punctuality, and above all knowledge. I'm a self-motivated learner, hardworking, and enthusiastic about learning new things. I am looking for opportunities where I can gain practical experience and significantly contribute to the company's success. I was among the 120 students to receive the Western Digital Scholarship for Stem.</p>
+        <p>Currently, working as a SDE-1 at Flipkart, creating a platform for automated OS/Runtime upgrades, thereby enhancing the security patches across repositories. I have worked as a SRE intern at Flipkart automating an end-to-end pipeline for automatic RCA document creation once an on-call issue is resolved. Previously, I have also worked in the domain of data analysis during my internship at Goldman Sachs, wherein I handled data comprising 40000+ entries of the bond table for a single day of each month. As a quick learner, I can adapt to and master new tech stacks efficiently, making me well-suited to dynamic and evolving technical environments.</p>
+        <p>My hobbies include playing chess and traveling. I received an AIR-100 in the Under-13 National Chess Championship, and would love to play a game of chess anytime 😁</p>
     </div>
     """
 )
@@ -254,39 +243,79 @@ create_section(
     "Experience",
     """
     <div class="project-item">
-        <h3>Software Development Engineer (SDE) | Flipkart</h3>
+        <h3>• Software Development Engineer (SDE-1), Developer Productivity | Flipkart</h3>
         <p><em>Bangalore, India</em></p>
         <ul>
-            <li>Automated OS and Runtime Upgrades by integrating with CICD, improving developer productivity by 30%</li>
-            <li>Automated RCA Quality and Standardisation, reducing toil by 5%-15%</li>
+            <li>Enhancing Developer Productivity by making a platform for automated OS/Runtime Upgrades by integrating with CI/CD pipeline, additionally enhancing security patch updates across repositories in Flipkart thereby reducing technical debt by 30%</li>
+            <li>Increased Efficiency of Post-Incident RCA Creation by automating the end-to-end pipeline for creating RCA. Enhanced RCA Quality and Standardisation reducing the toil of developers by 5% and the incident management team by 15%</li>
+            <li><strong>Tech Stack: </strong>Airflow, Stackstorm, Python(FastAPI), Kubernetes, GCP Cloud Functions</li>
         </ul>
-        <br>
-        <h3>Summer Analyst, Corporate Treasury | Goldman Sachs</h3>
+        <h3>• Summer Analyst, Corporate Treasury | Goldman Sachs</h3>
         <p><em>Bangalore, India</em></p>
         <ul>
-            <li>Modelled and simulated impact of hedging on Weighted Average Cost of Debt (WACD)</li>
-            <li>Analyzed WACD changes using a bond table with over 40,000 entries</li>
+            <li> Part of the Corporate Treasury (CT) division in the PnL stats team and worked on Scenario Analysis of Weighted Average Cost of Debt(WACD)</li>
+            <li>Modelled and Simulated a model for the variation of WACD when the GS-issued unsecured debt is Hedged vs the Actual WACD</li>
+            <li>Performed data analysis to evaluate WACD fluctuations (WACD explain) across months using a comprehensive bond table with over 40,000 entries</li>
+            <li><strong>Tech Stack: </strong>Excel, Slang</li>
+        </ul>
+        <h3>• Back End Developer | Adan Corporate</h3>
+        <p><em>Remote, India</em></p>
+        <ul>
+            <li>Restructured the entire company’s website from being a static page to a completely database-driven application that would dynamically render the employees and services associated with Adan</li>
+            <li>Added features to allow admin to add new employees, customize their profile and add services and expertise they offer directly on the website using the Django administration panel</li>
+            <li><strong>Tech Stack: </strong>Django, MySQL</li>
         </ul>
     </div>
     """
 )
 
-# Projects Section
+# Education Section
 create_section(
-    "Projects",
+    "Education",
     """
-    <div class="project-grid">
-        <ul class="project-item">
-            <h3>Solar Energy Forecasting</h3>
-            <p>Conducted pre-processing on GHI dataset and utilized ARIMA models for forecasting</p>
-            <h3>Web Scraping ML Model</h3>
-            <p>Scraped 10,000 data points for ML matchmaking model using Scrapy</p>
-            <h3>Stock Price Forecasting</h3>
-            <p>Forecasted stock prices for Tesla, Amazon, and Netflix with 91.4% accuracy</p>
-        </ul>
+    <div class="project-item">
+        <h3>• Birla Institute of Technology and Science, Pilani</h3>
+        <p>M.Sc. Mathematics + B.E. Computer Science</p>
+        <p><strong>GPA:</strong> 8.73/10.00 | <strong>Graduation:</strong> June 2023</p>
+        <br>
+        <h3>• Delhi Public School, Jodhpur</h3>
+        <p><strong>Class XII:</strong> 95.4% | May 2018</p>
+        <p><strong>Class X:</strong> CGPA:10 | May 2016</p>
     </div>
     """
 )
+
+# Skills Section
+create_section(
+    "Skills",
+    """
+    <div class="project-item">
+        <h3>• Programming</h3>
+        <p>C++, Python, Java, SQL, Slang</p>      
+        <h3>• Tools & Technologies</h3>
+        <p>Airflow, Cylc, StackStorm, GIT, MS Excel, IBM-SPSS, MySQL</p>
+        <h3>• Relevant Coursework</h3>
+        <p>Data Structures and Algorithms, Database Systems, Artificial Intelligence, Data Mining</p>
+    </div>
+    """
+)
+
+# Projects Section
+# create_section(
+#     "Projects",
+#     """
+#     <div class="project-grid">
+#         <ul class="project-item">
+#             <h3>Solar Energy Forecasting</h3>
+#             <p>Conducted pre-processing on GHI dataset and utilized ARIMA models for forecasting</p>
+#             <h3>Web Scraping ML Model</h3>
+#             <p>Scraped 10,000 data points for ML matchmaking model using Scrapy</p>
+#             <h3>Stock Price Forecasting</h3>
+#             <p>Forecasted stock prices for Tesla, Amazon, and Netflix with 91.4% accuracy</p>
+#         </ul>
+#     </div>
+#     """
+# )
 
 # Awards Section
 create_section(
@@ -295,9 +324,9 @@ create_section(
     <div class="project-item">
         <ul>
             <li>Tata Crucible Hackathon: Developed simulations for airport queue management</li>
-            <li>Western Digital Scholarship for STEM</li>
+            <li>Awarded the Western Digital STEM Scholarship of ₹1,50,000 for outstanding undergraduate coursework</li>
             <li>3-star coder at Codechef</li>
-            <li>U-13 Chess Nationals: Runner-up in State Championship and All India Rank 100</li>
+            <li>AIR-100 in the Under 13 Chess Nationals and Runner-up in State Championship</li>
         </ul>
     </div>
     """
